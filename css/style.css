@@ -7,6 +7,7 @@
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -72,6 +73,115 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSerifPro';
+  src: url("../fonts/SourceSerifPro-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background-color: #fff;
+}
+
+.container {
+  width: 1168px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #3A5F56;
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__img {
+  height: 17px;
+  width: 17px;
+  margin-right: 8px;
+}
+
+.btn__number {
+  display: inline-block;
+  width: 19px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  color: #3A5F56;
+  margin-left: 8px;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.header__item:last-child {
+  margin-right: 30px;
+}
+
+.header__item a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3A5F56;
+  padding: 8px 10px 8px 12px;
 }
