@@ -95,6 +95,16 @@ html {
   background-color: #fff;
 }
 
+.container-max {
+  width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 99px;
+  background: -o-radial-gradient(50% 50% at 0% 100%, rgba(184, 125, 88, 0.8) 0%, rgba(184, 125, 88, 0) 100%), -o-radial-gradient(50% 50% at 100% 0%, rgba(58, 95, 86, 0.55) 0%, rgba(58, 95, 86, 0) 100%);
+  background: radial-gradient(50% 50% at 0% 100%, rgba(184, 125, 88, 0.8) 0%, rgba(184, 125, 88, 0) 100%), radial-gradient(50% 50% at 100% 0%, rgba(58, 95, 86, 0.55) 0%, rgba(58, 95, 86, 0) 100%);
+}
+
 .container {
   width: 1168px;
   margin: 0 auto;
@@ -103,7 +113,7 @@ html {
 .btn {
   background-color: #3A5F56;
   border-radius: 6px;
-  padding: 14px 18px;
+  padding: 13px 19px;
   font-size: 16px;
   line-height: 22px;
   color: #fff;
@@ -184,4 +194,65 @@ html {
   line-height: 16px;
   color: #3A5F56;
   padding: 8px 10px 8px 12px;
+}
+
+.about {
+  background-color: #F4F3F0;
+}
+
+.about_me {
+  min-height: 298px;
+  max-width: 532px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 773px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__title {
+  font-family: 'SourceSerifPro';
+  font-size: 48px;
+  line-height: 58px;
+  color: #3A5F56;
+  margin-bottom: 11px;
+}
+
+.about__text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 22px;
+  color: #292C32;
+  margin-bottom: 17px;
+}
+
+.about__img {
+  height: 773px;
+  width: 552px;
+  -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 24px;
+}
+
+.about__img img {
+  -o-object-position: -14px -10px;
+     object-position: -14px -10px;
 }
