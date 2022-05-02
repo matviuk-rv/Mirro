@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 .container-max {
@@ -122,6 +123,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.btn:hover {
+  background-color: #b87d58;
 }
 
 .btn__img {
@@ -185,14 +190,15 @@ html {
   margin-right: 30px;
 }
 
-.header__item a {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+.header__link {
   font-size: 16px;
   line-height: 16px;
   color: #3A5F56;
   padding: 8px 10px 8px 12px;
+}
+
+.header__link:hover {
+  color: #b87d58;
 }
 
 .about {
@@ -351,6 +357,10 @@ html {
   margin-bottom: 6px;
 }
 
+.footer__text--down {
+  width: auto;
+}
+
 .footer__form {
   position: relative;
   width: 100%;
@@ -358,13 +368,17 @@ html {
 
 .footer__email {
   background: #f9fafb;
-  border: 1px solid #e5e7eb;
+  border: 5px solid #e5e7eb;
   border-radius: 8px;
   width: 100%;
-  padding: 14px 120px 16px 25px;
+  padding: 12px 120px 14px 25px;
   font-size: 16px;
   line-height: 22px;
   color: #ababab;
+}
+
+.footer__email:focus {
+  border: 5px solid #b87d58;
 }
 
 .footer__submit {
@@ -373,8 +387,42 @@ html {
   color: #fafafc;
   background-color: #292C32;
   border-radius: 10px;
-  padding: 7px 10px 9px;
+  padding: 8px 10px 8px;
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.footer__submit:hover {
+  background-color: #b87d58;
+}
+
+.footer__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.social__link {
+  margin-right: 20px;
+}
+
+.social__link:last-child {
+  margin-right: 0;
+}
+
+.social__link :hover {
+  -webkit-filter: invert(62%) sepia(28%) saturate(719%) hue-rotate(340deg) brightness(81%) contrast(86%);
+          filter: invert(62%) sepia(28%) saturate(719%) hue-rotate(340deg) brightness(81%) contrast(86%);
+}
+
+.social__img {
+  width: 24px;
+  height: 24px;
 }
