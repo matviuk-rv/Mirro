@@ -97,6 +97,8 @@ html {
 
 //////////////////////////
 .about {
+  width: 1440px;
+  margin: 0 auto;
   background-color: $light_color;
 
   &__me {
@@ -139,6 +141,96 @@ html {
     img {
       object-position: -14px -10px;
     }
+  }
+}
+
+.section {
+
+  &__header {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  &__header-title {
+    margin-top: 15px;
+    @extend %fontPro;
+    font-size: 32px;
+    color: $main_color;
+    line-height: 38px;
+  }
+
+  &__header-subtitle {
+    margin-top: 11px;
+    line-height: 22px;
+    @extend %fontRoboto;
+    font-size: 16px;
+    color: #292C32;
+
+
+  }
+
+  &__department {
+    height: 943px;
+    margin-top: 40px;
+  }
+
+  &__department-row {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+.container-max-section {
+  height: 1320px;
+  width: 1440px;
+  margin: 0 auto;
+  background: radial-gradient(50% 50% at -5% 105%, rgba(58, 95, 86, 0.376) 0%, rgba(58, 95, 86, 0) 100%);
+
+}
+
+.icon {
+  margin: 12px 12px;
+}
+
+.item-column {
+  width: 370px;
+  height: 304px;
+  margin: 8px 8px 8px 8px;
+  background: #F4F3F0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+
+  &__icon {
+    margin: 30px 0 0 29px;
+    height: 48px;
+    width: 48px;
+    background: rgba(58, 95, 86, 0.1);
+    border-radius: 24px;
+  }
+
+  &__title {
+    margin: 9px 0 0 29px;
+    @extend %fontPro;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3A5F56;
+  }
+
+  &__text {
+    margin: 6px 40px 0 29px;
+    @extend %fontRoboto;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292C32;
+  }
+
+  &__link {
+    margin: 17.50px 0 0 29px;
+    @extend %fontRoboto;
+    font-size: 17px;
+    line-height: 24px;
+    color: #3A5F56;
   }
 }
 

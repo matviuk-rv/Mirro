@@ -87,6 +87,18 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.section__header-title, .item-column__title {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section__header-subtitle, .item-column__text, .item-column__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -202,6 +214,8 @@ html {
 }
 
 .about {
+  width: 1440px;
+  margin: 0 auto;
   background-color: #F4F3F0;
 }
 
@@ -260,6 +274,88 @@ html {
 .about__img img {
   -o-object-position: -14px -10px;
      object-position: -14px -10px;
+}
+
+.section__header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.section__header-title {
+  margin-top: 15px;
+  font-size: 32px;
+  color: #3A5F56;
+  line-height: 38px;
+}
+
+.section__header-subtitle {
+  margin-top: 11px;
+  line-height: 22px;
+  font-size: 16px;
+  color: #292C32;
+}
+
+.section__department {
+  height: 943px;
+  margin-top: 40px;
+}
+
+.section__department-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-max-section {
+  height: 1320px;
+  width: 1440px;
+  margin: 0 auto;
+  background: radial-gradient(50% 50% at -5% 105%, rgba(58, 95, 86, 0.376) 0%, rgba(58, 95, 86, 0) 100%);
+}
+
+.icon {
+  margin: 12px 12px;
+}
+
+.item-column {
+  width: 370px;
+  height: 304px;
+  margin: 8px 8px 8px 8px;
+  background: #F4F3F0;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.item-column__icon {
+  margin: 30px 0 0 29px;
+  height: 48px;
+  width: 48px;
+  background: rgba(58, 95, 86, 0.1);
+  border-radius: 24px;
+}
+
+.item-column__title {
+  margin: 9px 0 0 29px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3A5F56;
+}
+
+.item-column__text {
+  margin: 6px 40px 0 29px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #292C32;
+}
+
+.item-column__link {
+  margin: 17.50px 0 0 29px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #3A5F56;
 }
 
 .footer {
