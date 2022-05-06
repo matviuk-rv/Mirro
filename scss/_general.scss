@@ -9,16 +9,12 @@ html {
   overflow: hidden;
   padding-top: 100px;
   padding-bottom: 99px;
-  background: radial-gradient(
-      50% 50% at 0% 100%,
+  background: radial-gradient(50% 50% at 0% 100%,
       rgba(184, 125, 88, 0.8) 0%,
-      rgba(184, 125, 88, 0) 100%
-    ),
-    radial-gradient(
-      50% 50% at 100% 0%,
+      rgba(184, 125, 88, 0) 100%),
+    radial-gradient(50% 50% at 100% 0%,
       rgba(58, 95, 86, 0.55) 0%,
-      rgba(58, 95, 86, 0) 100%
-    );
+      rgba(58, 95, 86, 0) 100%);
 }
 
 .container {
@@ -35,9 +31,11 @@ html {
   color: $white;
   display: flex;
   align-items: center;
+
   &:hover {
     background-color: $brown_color;
   }
+
   &__img {
     height: 17px;
     width: 17px;
@@ -84,13 +82,15 @@ html {
       margin-right: 30px;
     }
   }
+
   &__link {
     font-size: 16px;
     line-height: 16px;
     color: $main_color;
     padding: 8px 10px 8px 12px;
-    &:hover{
-      color:$brown_color;
+
+    &:hover {
+      color: $brown_color;
     }
   }
 }
@@ -99,7 +99,7 @@ html {
 .about {
   background-color: $light_color;
 
-  &_me {
+  &__me {
     min-height: 298px;
     max-width: 532px;
     display: flex;
@@ -135,6 +135,7 @@ html {
     width: 552px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 24px;
+
     img {
       object-position: -14px -10px;
     }
@@ -145,8 +146,9 @@ html {
 .footer {
   padding: 100px 0;
   background-color: $black_color;
-  width:1440px;
+  width: 1440px;
   margin: 0 auto;
+
   &__logo {
     text-align: center;
     margin-bottom: 75px;
@@ -174,6 +176,7 @@ html {
     text-transform: uppercase;
     color: $brown_color;
     margin-bottom: 9px;
+
     &--mini {
       margin-bottom: 2px;
     }
@@ -181,6 +184,7 @@ html {
 
   &__list {
     margin-bottom: 15px;
+
     &--mini {
       margin-bottom: 0px;
     }
@@ -188,10 +192,12 @@ html {
 
   &__item {
     margin-bottom: 12px;
+
     a {
       color: $white;
       font-size: 16px;
       line-height: 22px;
+
       &:hover {
         text-decoration: underline solid $brown_color;
       }
@@ -212,14 +218,17 @@ html {
     line-height: 22px;
     color: $white;
     margin-bottom: 6px;
+
     &--down {
       width: auto;
     }
   }
+
   &__form {
     position: relative;
     width: 100%;
   }
+
   &__email {
     background: #f9fafb;
     border: 5px solid #e5e7eb;
@@ -229,10 +238,12 @@ html {
     font-size: 16px;
     line-height: 22px;
     color: #ababab;
+
     &:focus {
       border: 5px solid $brown_color;
     }
   }
+
   &__submit {
     font-size: 16px;
     line-height: 22px;
@@ -243,6 +254,7 @@ html {
     position: absolute;
     top: 8px;
     right: 8px;
+
     &:hover {
       background-color: $brown_color;
     }
@@ -254,15 +266,17 @@ html {
     align-items: flex-start;
   }
 }
+
 .social {
   &__link {
     margin-right: 20px;
+
     &:last-child {
       margin-right: 0;
     }
+
     :hover {
-      filter: invert(62%) sepia(28%) saturate(719%) hue-rotate(340deg)
-        brightness(81%) contrast(86%);
+      filter: invert(62%) sepia(28%) saturate(719%) hue-rotate(340deg) brightness(81%) contrast(86%);
     }
   }
 
