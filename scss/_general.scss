@@ -299,7 +299,7 @@ html {
     border-radius: 16px;
     height: 438px;
     width: 368.893px;
-    margin:0px -10px 0 -10px;
+    margin: 0px -10px 0 -10px;
 
   }
 }
@@ -335,9 +335,57 @@ html {
 }
 
 
+.communication {
+
+  &__content {
+    margin: 0 auto;
+    height: 260px;
+    width: 800px;
+    background: #F4F3F0;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin: 0 0 0 80px;
+    height: 101px;
+    width: 313px;
+    @extend %fontRoboto;
+    font-size: 28px;
+    line-height: 34px;
+    color: #292C32;
+  }
+
+  &__button {
+    margin: 0 0 0 202px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 125px;
+    height: 58px;
+    background: #3A5F56;
+    border-radius: 6px;
+    padding-top: 14px;
+
+    .communication__link {
+      @extend %fontRoboto;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.communication-container-max {
+  display: flex;
+  align-items: center;
+  height: 460px;
+  width: 1440px;
+  margin: 0 auto;
+  background: radial-gradient(50% 50% at 20% 100%, rgba(184, 125, 88, 0.35) 0%, rgba(184, 125, 88, 0) 100%);
+
+}
 
 
-//////////////////////////
 .footer {
   padding: 100px 0;
   background-color: $black_color;
