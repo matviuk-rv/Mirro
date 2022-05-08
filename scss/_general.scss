@@ -231,6 +231,21 @@ html {
     font-size: 17px;
     line-height: 24px;
     color: #3A5F56;
+
+    & a {
+      color: #3A5F56;
+    }
+
+    &::after {
+      overflow: hidden;
+      position: absolute;
+      display: inline-flex;
+      background: url(../img/icon/Arrow.png) no-repeat;
+      content: '';
+      width: 20px;
+      height: 11px;
+      margin: 7px 0 0 7px;
+    }
   }
 }
 
@@ -322,6 +337,16 @@ html {
   text-align: center;
   text-decoration: none;
 
+  &::after {
+    position: absolute;
+    display: inline-flex;
+    background: url(../img/icon/Arrow.png) no-repeat;
+    content: '';
+    width: 20px;
+    height: 11px;
+    margin: 7px 0 0 7px;
+  }
+
   a {
     color: #3A5F56;
   }
@@ -329,8 +354,6 @@ html {
   &:hover,
   &:active {
     color: #3A5F56;
-    text-decoration: underline solid $brown_color;
-
   }
 }
 

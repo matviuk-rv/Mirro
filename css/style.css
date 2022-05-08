@@ -358,6 +358,23 @@ html {
   color: #3A5F56;
 }
 
+.item-column__link a {
+  color: #3A5F56;
+}
+
+.item-column__link::after {
+  overflow: hidden;
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: url(../img/icon/Arrow.png) no-repeat;
+  content: '';
+  width: 20px;
+  height: 11px;
+  margin: 7px 0 0 7px;
+}
+
 .article__header {
   height: 159px;
   text-align: center;
@@ -439,14 +456,24 @@ html {
   text-decoration: none;
 }
 
+.article-link::after {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: url(../img/icon/Arrow.png) no-repeat;
+  content: '';
+  width: 20px;
+  height: 11px;
+  margin: 7px 0 0 7px;
+}
+
 .article-link a {
   color: #3A5F56;
 }
 
 .article-link:hover, .article-link:active {
   color: #3A5F56;
-  -webkit-text-decoration: underline solid #b87d58;
-          text-decoration: underline solid #b87d58;
 }
 
 .communication__content {
